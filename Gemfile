@@ -9,7 +9,7 @@ if allow_local && File.exists?('../OpenStudio-extension-gem')
   # gem 'openstudio-extension', github: 'NREL/OpenStudio-extension-gem', branch: 'develop'
   gem 'openstudio-extension', path: '../OpenStudio-extension-gem'
 else
-  gem 'openstudio-extension', github: 'NREL/OpenStudio-extension-gem', tag: 'v0.1.6'
+  gem 'openstudio-extension', path: 'https://github.com/NREL/OpenStudio-extension-gem', tag: 'v0.1.6'
 end
 
 # if allow_local && File.exists?('../OpenStudio-Standards')
@@ -25,4 +25,4 @@ gem 'openstudio_measure_tester', '= 0.1.7' # This includes the dependencies for 
 #gem 'openstudio_measure_tester', :github => 'NREL/OpenStudio-measure-tester-gem', :ref => '273d1f1a5c739312688ea605ef4a5b6e7325332c'
 
 # simplecov has an unneccesary dependency on native json gem, use fork that does not require this
-gem 'simplecov', github: 'NREL/simplecov'
+gem 'simplecov', path: 'https://github.com/NREL/simplecov'
